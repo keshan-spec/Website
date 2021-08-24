@@ -415,7 +415,8 @@ body {
       grid-template-columns: .5fr 1fr;
   -ms-grid-rows: 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr;
-      grid-template-areas: "year award1" "blank award2";
+      grid-template-areas: "year award1"
+ "blank award2";
 }
 
 .certifications .certfications__timeline .timeline .year {
@@ -476,7 +477,8 @@ footer {
       grid-template-columns: 1fr 1fr 1fr;
   -ms-grid-rows: 2.5fr 1fr;
       grid-template-rows: 2.5fr 1fr;
-      grid-template-areas: "links links links" "copy blank social";
+      grid-template-areas: "links links links"
+ "copy blank social";
   position: relative;
 }
 
@@ -720,7 +722,7 @@ footer .blank {
   .landing_page nav .links .nav__links,
   .landing_page nav .links .nav__links__social {
     padding: 0;
-    font-size: 1.9rem;
+    font-size: 1.5rem;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -749,7 +751,8 @@ footer .blank {
         grid-template-columns: 1fr;
     -ms-grid-rows: .6fr 1fr;
         grid-template-rows: .6fr 1fr;
-        grid-template-areas: "about" "cards";
+        grid-template-areas: "about"
+ "cards";
   }
   .about_page .cards {
     -ms-grid-row: 2;
@@ -821,7 +824,8 @@ footer .blank {
     left: 40%;
   }
   footer {
-        grid-template-areas: "links links links" "copy copy social";
+        grid-template-areas: "links links links"
+ "copy copy social";
     position: relative;
   }
   .certifications .certfications__timeline .timeline .certs {
@@ -841,7 +845,9 @@ footer .blank {
         grid-template-columns: 1fr 1fr 1fr;
     -ms-grid-rows: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
-        grid-template-areas: "links links links" "social social social" "copy copy copy";
+        grid-template-areas: "links links links"
+ "social social social"
+ "copy copy copy";
   }
   footer::after {
     top: 40%;
@@ -871,7 +877,8 @@ footer .blank {
         grid-template-columns: 1fr;
     -ms-grid-rows: 1fr;
         grid-template-rows: 1fr;
-        grid-template-areas: "year year" "award1 blank";
+        grid-template-areas: "year year"
+ "award1 blank";
   }
   .certifications .certfications__timeline .timeline .year {
     margin-bottom: 20px;
