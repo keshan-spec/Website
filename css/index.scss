@@ -74,7 +74,6 @@ body {
         max-height: 80px;
         height: 100%;
         overflow: hidden;
-        // position: fixed;
         top: 0;
 
 
@@ -615,13 +614,6 @@ footer {
             left: -55%;
         }
 
-        nav {
-
-            // display: none;
-            .logo {}
-        }
-
-
         .landing_page__text {
             left: 14%;
 
@@ -655,22 +647,23 @@ footer {
 
 
         nav {
+            z-index: 100;
+            max-height: none;
+
             .toggle_btn {
                 display: flex;
                 z-index: 200;
             }
 
-            max-height: none;
 
             .logo {
                 margin: 0;
-                z-index: 201;
+                z-index: 101;
             }
 
             .links {
                 flex-direction: column;
                 justify-content: center;
-                // display: none;
                 transition: width .5s ease-in;
                 align-items: center;
                 background-color: #56E85B;
