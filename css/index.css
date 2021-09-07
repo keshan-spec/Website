@@ -383,6 +383,12 @@ body {
   font-size: 1rem;
   line-height: 1.7;
 }
+.about_page .about_me p span {
+  font-style: italic;
+  background-color: #c7b31c;
+  color: #1f2233;
+  font-weight: bold;
+}
 
 .certifications {
   width: 100%;
