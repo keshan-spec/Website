@@ -5,24 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <!-- OG Meta Tags -->
-    <meta property="og:title" content="Portfolio" />
-    <meta property="og:type" content="website" />
-    <meta property="og:description" content="Researching, Writing and learning newer technology." />
-    <meta property="og:image" content="/assets/pic.jpg" />
-    <meta property="og:url" content="https://jadhusan.netlify.app" />
-    <!-- Twitter Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:domain" content="jadhusan.netlify.app">
-    <meta name="twitter:url" content="https://jadhusan.netlify.app/">
-    <meta name="twitter:title" content="Portfolio">
-    <meta name="twitter:description" content="Researching, Writing and learning newer technology.">
-    <meta name="twitter:image" content="/assets/pic.jpg">
-    <meta name="twitter:card" content="summary_large_image" />
-    <!-- End Meta Tags -->
     <title>Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
-    <link rel="shortcut icon" href="assets/icon.png" />
+    <meta property="og:image" content="assets/pic1.jpg" />
+    <link rel="shortcut icon" href="assets/gamepad.svg" />
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/index.css">
 </head>
@@ -36,10 +22,10 @@
             </a>
             <div class="links" id="links">
                 <ul class="nav__links">
-                    <li><a href="#works">Awards </a></li>
-                    <li><a href="#about">About me</a></li>
-                    <li><a href="https://jadhusan-s.medium.com/" target="_">Articles</a></li>                    
-                    <li><a href="">Contact Me</a></li>
+                    <li><a href="index.html#about"> About me</a></li>
+                    <li><a href=""> Hire me</a></li>
+                    <li><a href=""> Blogs</a></li>
+                    <li><a href=""> Works</a></li>
                 </ul>
 
                 <ul class="nav__links__social">
@@ -55,9 +41,10 @@
         <div class="landing_page__text">
             <span class="button_style">Tech Enthusiast</span>
             <p>
-                Talk is Cheap.Show me the Code.
+                Talk is Cheap.
+                Show me the Code
             </p>
-            <span>Curious to learn new/old technologies.</span>
+            <span>I code and Troubleshoot system/network</span>
         </div>
 
 
@@ -72,24 +59,33 @@
         </div>
     </div>
 
-    <div class="about_page">
+    <div class="about_page" id="about">
         <div class="cards">
             <div class="card">
-                <span>$ ~/ Network Architecture </span>
-                <p>Designed and Implemented Virtualization, Security & Network Infrastructure for a small-scale Company...
+                <span>$ ~/Networking </span>
+                <p>I Have designed and Implemented a Network Solution for a Virtual Company named Laugf in first year
+                    and during second year I Enhanced the network with lots of advanced concepts.
                 </p>
+                <a href="" class="more">view more</a>
             </div>
             <div class="card">
-                <span>$ ~/ System Administrations</span>
-                <p>Implemented Enhanced Security PFSense, Proxy service, Apache web server, HAProxy, Backup, DNS Server etc... </p>
+                <span>$ ~/System Administrations</span>
+                <p>Implement Enhanced Security PFSense Firewall, Proxy service and reports, Apache web server using
+                    virtual host, HAProxy Load balancer, Backup utility,Zimbra mail, DNS Server, Samba Server and Apache
+                    Web. </p>
+                <a href="" class="more">view more</a>
+
             </div>
             <div class="card">
-                <span>$ ~/ Scripting & Automation</span>
-                <p>Implemented Advanced Projects Using Python3 IPSec tunnel, Firewall, Tcpdump, Ping, Traceroute, Netmiko, Napalm etc... </p>
+                <span>$ ~/Scripting & Automation</span>
+                <p>Implemented Advanced Projects Using Python3
+                    ▪ IPSec tunnel ▪ Firewall ▪ Tcpdump ▪ Ping ▪ Traceroute ▪ Hexdump </p>
+                <a href="" class="more">view more</a>
+
             </div>
 
         </div>
-        <div class="about_me" id="about">
+        <div class="about_me">
             <span class="whoami">$ ~/ whoami</span>
             <h1>Hello, I'm Jadhusan</h1>
             <span class="quote">
@@ -97,14 +93,13 @@
             </span>
 
             <p>
-                I'm an <span>undergraduate Network Engineering</span> based in Sri Lanka. <br>
-                I’ve spent the two years of of my degree program and learning newer technology.<br>
+                I'm an undergraduate Network Engineering based in Sri Lanka. <br>
+                I’ve spent the two years of 2019-2021 of my degree program and learning newer technology.<br>
                 <br>
                 I have a Higher National Diploma in Network Engineering from NIBM, Sri Lanka. <br>
                 <br>
-                I have been doing multple projects in various technologies and then <span>writing articles</span> about it in Medium.
-                After spending multple years in troubleshooting, configuring the networking/ servers/ cloud computing and developing softwares, I've acquired some crucial skills in the field.
-                furthermore, I been <span>Contributing</span> for open-source projects in GitHub. And trying to <span>solve problems</span> in Stack Overflow.
+                After spending multple years in troubleshooting, administratons in network/system and developing
+                softwares, I've acquired some crucial skills in the field. Team & Solo worker, and Adaptive Learner.
             </p>
         </div>
     </div>
@@ -113,7 +108,7 @@
 
     </div> -->
 
-    <div class="certifications" id="works">
+    <div class="certifications">
         <h1>Certifications & Awards</h1>
 
         <div class="certfications__timeline">
@@ -126,14 +121,14 @@
                     <span class="award_name">
                         MCSA: Windows Server 2016
                     </span>
-                <div class="certs" id="2">
-                    <span class="awarding_org">
-                        Microsoft
-                    </span>
-                    <span class="award_name">
-                        AZ-104: Azure Administrator
-                    </span>
-                </div>
+                    <div class="certs" id="2">
+                        <span class="awarding_org">
+                            Microsoft
+                        </span>
+                        <span class="award_name">
+                            AZ-104: Azure Administrator
+                        </span>
+                    </div>
                 </div>
 
             </div>
@@ -154,7 +149,7 @@
                         Oracle
                     </span>
                     <span class="award_name">
-                        Cloud Infrastructure 2020 Certified Associate
+                        Oracle: Cloud Certified Associate
                     </span>
                 </div>
                 <span></span>
@@ -175,18 +170,10 @@
                         NIBM
                     </span>
                     <span class="award_name">
-                        Diploma In Network Engineering 
+                        Diploma In Network Engineering
                     </span>
                 </div>
                 <span></span>
-                <div class="certs" id="2">
-                    <span class="awarding_org">
-                        Netacad
-                    </span>
-                    <span class="award_name">
-                        Networking Academy ID: 1000216613
-                    </span>
-                </div>
             </div>
         </div>
     </div>
@@ -194,20 +181,21 @@
     <footer>
         <div class="footer_links">
             <ul>
-                <li><a href="#works">Awards</a></li>
-                <li><a href="#about">About me</a></li>
-                <li><a href="https://jadhusan-s.medium.com/" target="_">Articles</a></li>
-                <li><a href="">Buy me a Coffee </a></li>
+                <li><a href="">About me</a></li>
+                <li><a href="">Hire me</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Works</a></li>
             </ul>
         </div>
-        <div class="copy">© 2020 Jadhusan-S. All rights reserved.</div>
+        <div class="copy">keshan-spec © 2021. All rights reserved.</div>
         <div class="social_icons">
-            <a href="https://www.linkedin.com/in/jadhusan24/"><img src="assets/footer-icons/linkedin-letters.svg" alt=""></a>
+            <a href="https://www.youtube.com/DarkMoonV/"><img src="assets/footer-icons/dribble.svg" alt=""></a>
+            <a href=""><img src="assets/footer-icons/facebook-logo.svg" alt=""></a>
             <a href="https://github.com/Jadhusan-S"><img src="assets/footer-icons/github-logo.svg" alt=""></a>
-            <a href="https://www.facebook.com/Jxdhusxn/"><img src="assets/footer-icons/facebook-logo.svg" alt=""></a>
-            <a href="https://instagram.com/dark_moon.___?utm_medium=copy_link"><img src="assets/footer-icons/instagram.svg" alt=""></a>
-            <a href="https://jadhusan-s.medium.com/"><img src="assets/footer-icons/dribble.svg" alt=""></a>
-
+            <a href="https://instagram.com/dark_moon.___?utm_medium=copy_link"><img
+                    src="assets/footer-icons/instagram.svg" alt=""></a>
+            <a href="https://www.linkedin.com/in/jadhusan24/"><img src="assets/footer-icons/linkedin-letters.svg"
+                    alt=""></a>
         </div>
     </footer>
 

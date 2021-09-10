@@ -269,7 +269,10 @@ body {
 
 .about_page {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   background-color: #252429;
   position: relative;
   margin: 0;
@@ -294,13 +297,15 @@ body {
   -ms-grid-rows: 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr;
   padding: 30px 10px;
+  grid-gap: 0.6rem;
 }
 
 .about_page .cards .card {
   margin: auto;
   width: 80%;
-  max-height: 115px;
-  height: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   overflow: hidden;
   border-radius: 19px;
   background-color: #2D2E32;
@@ -329,6 +334,15 @@ body {
           transform: scale(1.01);
 }
 
+.about_page .cards .card .more {
+  display: block;
+  text-decoration: underline;
+  font-size: 0.9rem;
+  opacity: .9;
+  margin: 10px 0;
+  font-family: "White Rabbit";
+}
+
 .about_page .cards .card span {
   color: #56E85B;
   font-size: 1rem;
@@ -338,6 +352,7 @@ body {
 .about_page .cards .card p {
   color: #B4B4B4;
   font-size: .9rem;
+  margin: 7px 0;
 }
 
 .about_page .about_me {
@@ -383,12 +398,6 @@ body {
   font-size: 1rem;
   line-height: 1.7;
 }
-.about_page .about_me p span {
-  font-style: italic;
-  background-color: #c7b31c;
-  color: #1f2233;
-  font-weight: bold;
-}
 
 .certifications {
   width: 100%;
@@ -421,8 +430,7 @@ body {
       grid-template-columns: .5fr 1fr;
   -ms-grid-rows: 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr;
-      grid-template-areas: "year award1"
- "blank award2";
+      grid-template-areas: "year award1" "blank award2";
 }
 
 .certifications .certfications__timeline .timeline .year {
@@ -483,8 +491,7 @@ footer {
       grid-template-columns: 1fr 1fr 1fr;
   -ms-grid-rows: 2.5fr 1fr;
       grid-template-rows: 2.5fr 1fr;
-      grid-template-areas: "links links links"
- "copy blank social";
+      grid-template-areas: "links links links" "copy blank social";
   position: relative;
 }
 
@@ -728,7 +735,7 @@ footer .blank {
   .landing_page nav .links .nav__links,
   .landing_page nav .links .nav__links__social {
     padding: 0;
-    font-size: 1.5rem;
+    font-size: 1.9rem;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -757,8 +764,7 @@ footer .blank {
         grid-template-columns: 1fr;
     -ms-grid-rows: .6fr 1fr;
         grid-template-rows: .6fr 1fr;
-        grid-template-areas: "about"
- "cards";
+        grid-template-areas: "about" "cards";
   }
   .about_page .cards {
     -ms-grid-row: 2;
@@ -830,8 +836,7 @@ footer .blank {
     left: 40%;
   }
   footer {
-        grid-template-areas: "links links links"
- "copy copy social";
+        grid-template-areas: "links links links" "copy copy social";
     position: relative;
   }
   .certifications .certfications__timeline .timeline .certs {
@@ -851,9 +856,7 @@ footer .blank {
         grid-template-columns: 1fr 1fr 1fr;
     -ms-grid-rows: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
-        grid-template-areas: "links links links"
- "social social social"
- "copy copy copy";
+        grid-template-areas: "links links links" "social social social" "copy copy copy";
   }
   footer::after {
     top: 40%;
@@ -883,8 +886,7 @@ footer .blank {
         grid-template-columns: 1fr;
     -ms-grid-rows: 1fr;
         grid-template-rows: 1fr;
-        grid-template-areas: "year year"
- "award1 blank";
+        grid-template-areas: "year year" "award1 blank";
   }
   .certifications .certfications__timeline .timeline .year {
     margin-bottom: 20px;
